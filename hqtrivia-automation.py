@@ -217,7 +217,7 @@ do shell script "screencapture -x -t tiff -l " & winID &"""
         # New file since we're going to edit it
         file = self.picture.split('.')
         self.picture = "source_edited." + file[len(file)-1]
-        im.crop((0, 300, width, height-600)).save(self.picture)
+        im.crop((0, 300, width, height-400)).save(self.picture)
         #im.resize((round(width*3), round(height*3))).save(
             #self.picture, dpi=(600,600))
 
